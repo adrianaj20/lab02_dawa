@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acme</title>
+</head>
+<style>
+    body{
+        margin: 0%;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    header {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    padding: -1px;
+    font-size: 15px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    header {
+      flex-direction: column;
+    }
+  }
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b01b1f;
+}
+
+.logo-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+nav {
+  background-color: #000000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 18px;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 30px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    display: none;
+  }
+  
+  .nav-links li {
+    margin: 10px 0;
+  }
+  
+  .nav-links a {
+    padding: 10px;
+    border-top: 1px solid #fff;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  
+  nav .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+    color: #fff;
+    font-size: 24px;
+  }
+}
+
+
+footer {
+background-color: #000000;
+padding: 10px;
+font-size: 14px;
+margin-bottom: 0%;
+margin-top: -3px;
+}
+
+.footer-container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.logo img {
+height: 50px;
+width: auto;
+}
+
+.links ul {
+display: flex;
+justify-content: flex-end;
+align-items: center;
+list-style: none;
+margin: 0;
+padding: 0;
+padding-right: 30px;
+}
+
+.links li {
+margin-left: 20px;
+}
+
+.links a {
+color: #ffffff;
+text-decoration: none;
+}
+
+.links a:hover {
+color: #666;
+}
+
+.contacto {
+  width: 600px;
+  margin: 0 auto;
+
+}
+
+.contacto h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.contacto label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.contacto input,
+.contacto textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.contacto button {
+  background-color: #000000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .contacto input,
+  .contacto textarea,
+  .contacto button {
+    font-size: 14px;
+  }
+  
+  .contacto button {
+    padding: 8px 16px;
+  }
+}
+
+</style>
+<body>
+    <header>
+        <h1>Adrian Najarro</h1>
+    </header>
+    <div class="logo-container">
+      <a href="/"><img src="https://ep00.epimg.net/verne/imagenes/2015/07/31/articulo/1438353048_228377_1438943170_noticia_normal.jpg" alt=""></a>
+    </div>
+    <nav>
+        <ul class="nav-links">
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/nosotros">Nosotros</a></li>
+          <li><a href="/servicios">Servicios</a></li>
+          <li><a href="/clientes">Clientes</a></li>
+          <li><a href="/contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <div style="height: 450px;margin-left: 25%; width: 51%; background-color: rgb(228, 202, 53); margin-bottom: 50px; padding:1px; margin-top: 40px; border-radius: 5px;
+      box-shadow: 7px 7px 7px 7px rgba(0, 0, 0, 0.2);" >
+        <div class="contacto" >
+          <h2>Contacto</h2>
+          <form action="#" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+
+      <footer>
+        <div class="footer-container">
+          <div class="logo">
+            <a href="/"><img src="https://1000marcas.net/wp-content/uploads/2022/06/ACME-logo.png" alt="Logo de la empresa"></a>
+          </div>
+          <div class="links">
+            <ul>
+              <li><a href="/nosotros">Nosotros</a></li>
+              <li><a href="/servicios">Servicios</a></li>
+              <li><a href="/clientes">Clientes</a></li>
+              <li><a href="/contacto">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>

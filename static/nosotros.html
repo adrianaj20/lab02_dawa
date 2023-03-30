@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acme</title>
+</head>
+<style>
+    body{
+        margin: 0%;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    header {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    padding: -1px;
+    font-size: 15px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    header {
+      flex-direction: column;
+    }
+  }
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b01b1f;
+}
+
+.logo-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+nav {
+  background-color: #000000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 18px;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 30px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    display: none;
+  }
+  
+  .nav-links li {
+    margin: 10px 0;
+  }
+  
+  .nav-links a {
+    padding: 10px;
+    border-top: 1px solid #fff;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  
+  nav .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+    color: #fff;
+    font-size: 24px;
+  }
+}
+
+
+footer {
+background-color: #000000;
+padding: 10px;
+font-size: 14px;
+margin-bottom: 0%;
+margin-top: -3px;
+}
+
+.footer-container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.logo img {
+height: 50px;
+width: auto;
+}
+
+.links ul {
+display: flex;
+justify-content: flex-end;
+align-items: center;
+list-style: none;
+margin: 0;
+padding: 0;
+padding-right: 30px;
+}
+
+.links li {
+margin-left: 20px;
+}
+
+.links a {
+color: #ffffff;
+text-decoration: none;
+}
+
+.links a:hover {
+color: #666;
+}
+.cuerpo{
+  position: relative;
+}
+.cuerpo img{
+  height: 600px;
+  width: 100%;
+  filter: brightness(50%);
+}
+.cuerpo h1{
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; font-size: 24px;
+  font-size: 70px;
+}
+.cuerpo p{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; font-size: 24px;
+  text-align: justify;
+  width: 900px;
+}
+
+
+</style>
+<body>
+    <header>
+        <h1>Adrian Najarro</h1>
+    </header>
+    <div class="logo-container">
+      <a href="/"><img src="https://ep00.epimg.net/verne/imagenes/2015/07/31/articulo/1438353048_228377_1438943170_noticia_normal.jpg" alt=""></a>
+    </div>
+    <nav>
+        <ul class="nav-links">
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/nosotros">Nosotros</a></li>
+          <li><a href="/servicios">Servicios</a></li>
+          <li><a href="/clientes">Clientes</a></li>
+          <li><a href="/contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="cuerpo">
+        <img src="https://images.squarespace-cdn.com/content/v1/53c4566ae4b047b01385cdb6/1530741413459-RVZYA5OPKQ323ZXLGDT7/Fondo+EXF+2018+-+nACHO+%281%29.jpg?format=2500w" alt="Descripción de la imagen">
+        <h1>NOSOTROS</h1>
+        <p>Bienvenidos a ACME, una empresa líder en el rubro ferretero con más de 20 años de experiencia en el mercado. Nos dedicamos a proveer soluciones integrales a nuestros clientes, ofreciendo una amplia variedad de herramientas, materiales y productos para la construcción, remodelación y mantenimiento de hogares, empresas e industrias.
+          En ACME, estamos comprometidos en brindar productos de alta calidad a precios competitivos. Nos enorgullece contar con un equipo de profesionales altamente capacitados en el rubro ferretero, que está siempre dispuesto a brindar asesoramiento técnico especializado y atención personalizada a cada uno de nuestros clientes.</p>
+      </div>
+
+      <footer>
+        <div class="footer-container">
+          <div class="logo">
+            <a href="/"><img src="https://1000marcas.net/wp-content/uploads/2022/06/ACME-logo.png" alt="Logo de la empresa"></a>
+          </div>
+          <div class="links">
+            <ul>
+              <li><a href="/nosotros">Nosotros</a></li>
+              <li><a href="/servicios">Servicios</a></li>
+              <li><a href="/clientes">Clientes</a></li>
+              <li><a href="/contacto">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acme</title>
+</head>
+<style>
+      * {
+        box-sizing: border-box;
+    }
+
+    .columna {
+        float: left;
+        margin-left: 70px;
+        width: 26%;
+        padding: 40px;
+    }
+
+    .fila::after {
+        clear: both;
+        display: table;
+    }
+
+    img {
+        height: 260px;
+        width: 100%;
+    }
+    body{
+        margin: 0%;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    header {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    padding: -1px;
+    font-size: 15px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    header {
+      flex-direction: column;
+    }
+  }
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b01b1f;
+}
+
+.logo-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+nav {
+  background-color: #000000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 18px;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 30px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    display: none;
+  }
+  
+  .nav-links li {
+    margin: 10px 0;
+  }
+  
+  .nav-links a {
+    padding: 10px;
+    border-top: 1px solid #fff;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  
+  nav .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+    color: #fff;
+    font-size: 24px;
+  }
+}
+
+
+footer {
+background-color: #000000;
+padding: 10px;
+font-size: 14px;
+margin-bottom: 0%;
+margin-top: -3px;
+}
+
+.footer-container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.logo img {
+height: 50px;
+width: auto;
+}
+
+.links ul {
+display: flex;
+justify-content: flex-end;
+align-items: center;
+list-style: none;
+margin: 0;
+padding: 0;
+padding-right: 30px;
+}
+
+.links li {
+margin-left: 20px;
+}
+
+.links a {
+color: #ffffff;
+text-decoration: none;
+}
+
+.links a:hover {
+color: #666;
+}
+.cuerpo{
+  position: relative;
+}
+.cuerpo h1{
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; font-size: 24px;
+  font-size: 70px;
+}
+.cuerpo p{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; font-size: 24px;
+  text-align: center;
+  width: 900px;
+}
+</style>
+<body>
+    <header>
+        <h1>Adrian Najarro</h1>
+    </header>
+    <div class="logo-container">
+      <a href="/"><img src="https://ep00.epimg.net/verne/imagenes/2015/07/31/articulo/1438353048_228377_1438943170_noticia_normal.jpg" alt=""></a>
+    </div>
+    <nav>
+        <ul class="nav-links">
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/nosotros">Nosotros</a></li>
+          <li><a href="/servicios">Servicios</a></li>
+          <li><a href="/clientes">Clientes</a></li>
+          <li><a href="/contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <section>
+        <div style="height: 700px;">
+            <div class="fila">
+                <div class="columna">
+                    <a href=""><img src="https://mymodernmet.com/wp/wp-content/uploads/2019/09/100k-ai-faces-4.jpg"></a>
+                </div>
+                <div class="columna">
+                    <a href=""><img src="https://thumbs.dreamstime.com/b/cara-sonriente-de-la-persona-diversa-108427785.jpg"></a>
+                </div>
+                <div class="columna">
+                    <a href=""><img src="https://img.europapress.es/fotoweb/fotonoticia_20150331134913-15031252349_600.jpg"></a>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="columna">
+                    <a href=""><img src="https://p1.pxfuel.com/preview/96/901/311/girl-woman-portrait-closeup-beauty-ruda.jpg"></a>
+                </div>
+                <div class="columna">
+                    <a href=""><img src="https://hips.hearstapps.com/ellees.h-cdn.co/assets/15/37/original/original-ostros-pasivos-personas-influenciables-12718564-1-esl-es-rostros-pasivos-personas-influenciables-jpg.jpg"></a>
+                </div>
+                <div class="columna">
+                    <a href=""><img src="https://i0.wp.com/www.diarlu.com/wp-content/uploads/2019/09/rostro-mujer-adulta.jpg?resize=500%2C500&ssl=1"></a>
+                </div>
+            </div>
+        </div>
+      </section>
+      <footer>
+        <div class="footer-container">
+          <div class="logo">
+            <a href="/"><img src="https://1000marcas.net/wp-content/uploads/2022/06/ACME-logo.png" alt="Logo de la empresa"></a>
+          </div>
+          <div class="links">
+            <ul>
+              <li><a href="/nosotros">Nosotros</a></li>
+              <li><a href="/servicios">Servicios</a></li>
+              <li><a href="/clientes">Clientes</a></li>
+              <li><a href="/contacto">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>

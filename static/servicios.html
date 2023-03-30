@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acme</title>
+</head>
+<style>
+    body{
+        margin: 0%;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    header {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    padding: -1px;
+    font-size: 15px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    header {
+      flex-direction: column;
+    }
+  }
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b01b1f;
+}
+
+.logo-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+nav {
+  background-color: #000000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 18px;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 30px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    display: none;
+  }
+  
+  .nav-links li {
+    margin: 10px 0;
+  }
+  
+  .nav-links a {
+    padding: 10px;
+    border-top: 1px solid #fff;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  
+  nav .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+    color: #fff;
+    font-size: 24px;
+  }
+}
+
+
+footer {
+background-color: #000000;
+padding: 10px;
+font-size: 14px;
+margin-bottom: 0%;
+margin-top: -3px;
+}
+
+.footer-container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.logo img {
+height: 50px;
+width: auto;
+}
+
+.links ul {
+display: flex;
+justify-content: flex-end;
+align-items: center;
+list-style: none;
+margin: 0;
+padding: 0;
+padding-right: 30px;
+}
+
+.links li {
+margin-left: 20px;
+}
+
+.links a {
+color: #ffffff;
+text-decoration: none;
+}
+
+.links a:hover {
+color: #666;
+}
+.cuerpo{
+  position: relative;
+}
+.cuerpo img{
+  height: 700px;
+  width: 100%;
+  filter: brightness(50%);
+}
+.cuerpo h1{
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; font-size: 24px;
+  font-size: 70px;
+}
+.cuerpo p{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; font-size: 24px;
+  text-align: justify;
+  width: 900px;
+}
+
+</style>
+<body>
+    <header>
+        <h1>Adrian Najarro</h1>
+    </header>
+    <div class="logo-container">
+      <a href="/"><img src="https://ep00.epimg.net/verne/imagenes/2015/07/31/articulo/1438353048_228377_1438943170_noticia_normal.jpg" alt=""></a>
+    </div>
+    <nav>
+        <ul class="nav-links">
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/nosotros">Nosotros</a></li>
+          <li><a href="/servicios">Servicios</a></li>
+          <li><a href="/clientes">Clientes</a></li>
+          <li><a href="/contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="cuerpo">
+        <img src="https://emprendepyme.net/wp-content/uploads/2019/11/factores-clave-marketing-enfoque-empresas-servicios-1200x900.jpg" alt="Descripción de la imagen">
+        <h1>SERVICIOS</h1>
+        <p>En ACME Ferretería, ofrecemos una amplia gama de servicios para satisfacer las necesidades de nuestros clientes. Desde herramientas manuales y eléctricas hasta materiales de construcción y suministros para el hogar, tenemos todo lo que necesitas para completar tus proyectos de manera eficiente. Nuestro equipo de expertos en ferretería está altamente capacitado para ayudarte a encontrar los productos adecuados y brindar asesoramiento sobre cómo utilizarlos de manera segura y efectiva. Además, ofrecemos servicios de entrega y servicio al cliente excepcionales para asegurarnos de que tu experiencia de compra sea satisfactoria. ¡Ven y descubre todo lo que ACME Ferretería puede hacer por ti!</p>
+      </div>
+
+      <footer>
+        <div class="footer-container">
+          <div class="logo">
+            <a href="/"><img src="https://1000marcas.net/wp-content/uploads/2022/06/ACME-logo.png" alt="Logo de la empresa"></a>
+          </div>
+          <div class="links">
+            <ul>
+              <li><a href="/nosotros">Nosotros</a></li>
+              <li><a href="/servicios">Servicios</a></li>
+              <li><a href="/clientes">Clientes</a></li>
+              <li><a href="/contacto">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
